@@ -1,73 +1,59 @@
 .header {
-
     position: relative;
     grid-area: header;
     justify-content: space-between;
     padding: 24px 0 19px;
     border-bottom: 1px solid $dark-gray;
-    @media(max-width: 767px) {
+    @media (max-width: 767px) {
         padding: 15px 0;
     }
 
     // .header__item
 
     &__item {
+        flex-direction: column;
+        justify-content: center;
         min-height: 108px;
+        padding-right: 22px;
         background-color: $dark-gray;
-        @media(max-width: 767px) {
+        @media (max-width: 767px) {
             min-height: 70px;
         }
-    }
-
-    // .header__left-item
-
-    &__left-item {
-        width: 122px / $container * 100%;
-        @media(max-width: 767px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100px;
+        &:nth-child(1) {
+            width: 122px / $container * 100%;
+            @media (max-width: 767px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+            }
         }
-    }
-
-    // .header__center-item
-
-    &__center-item {
-        width: 279px / $container * 100%;
-        @media(max-width: 767px) {
-            display: none;
+        &:nth-child(2) {
+            width: 279px / $container * 100%;
+            @media (max-width: 767px) {
+                display: none;
+            }
         }
-    }
-
-    // .header__right-item
-
-    &__right-item {
-        justify-content: flex-end;
-        align-items: center;
-        width: 513px / $container * 100%;
-        padding-right: 22px;
-        @media(max-width: 767px) {
-            width: 100% - 100px / $container * 100%;
+        &:nth-child(3) {
+            width: 513px / $container * 100%;
+            @media (max-width: 767px) {
+                width: 100% - 100px / $container * 100%;
+            }
         }
-    }
-
-    // .header__contact
-
-    &__contact {
-        flex-direction: column;
-        align-items: flex-end;
     }
 
     // .header__contact-item
 
     &__contact-link {
+        display: block;
+        text-align: right;
         color: #ffffff;
         span {
             border-bottom: 1px solid #ffffff;
         }
-        &:nth-child(2), &:nth-child(3) {
-            @media(max-width: 767px) {
+        &:nth-child(2),
+        &:nth-child(3) {
+            @media (max-width: 767px) {
                 display: none;
             }
         }
@@ -75,9 +61,8 @@
 }
 
 .hamburger-btn {
-
     display: none;
-    @media(max-width: 767px) {
+    @media (max-width: 767px) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -91,7 +76,7 @@
         width: 100%;
         height: 3px;
         background-color: #fff;
-        transition: .5s all;
+        transition: 0.5s all;
     }
 
     &--active {
@@ -113,7 +98,7 @@
 
 .burger-menu {
     display: none;
-    @media(max-width: 767px) {
+    @media (max-width: 767px) {
         position: absolute;
         z-index: 100;
         top: 0;
@@ -126,7 +111,7 @@
         height: 100vh;
         padding: 50px 30px;
         background-color: $dark-gray;
-        transition: .5s ease;
+        transition: 0.5s ease;
     }
     &__close {
         position: absolute;
@@ -137,17 +122,17 @@
         cursor: pointer;
     }
     &--active {
-        @media(max-width: 767px) {
+        @media (max-width: 767px) {
             left: 0;
         }
     }
-    @media(max-width: 575px) {
+    @media (max-width: 575px) {
         width: 70%;
         padding: 50px 15px;
     }
     .header__contact-link {
         display: none;
-        @media(max-width: 767px) {
+        @media (max-width: 767px) {
             display: block;
             &:first-child {
                 display: none;
