@@ -1,21 +1,17 @@
 @font-face {
-	font-family: 'Arial';
-	src: url('ArialMT.eot');
-	src: local('Arial'), local('ArialMT'),
-		url('ArialMT.eot?#iefix') format('embedded-opentype'),
-		url('ArialMT.woff') format('woff'),
-		url('ArialMT.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Arial';
+    src: url('../fonts/ArialMT.eot');
+    src: local('Arial'), local('ArialMT'), url('../fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialMT.woff') format('woff'), url('../fonts/ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Arial';
-	src: url('Arial-BoldMT.eot');
-	src: local('Arial Bold'), local('Arial-BoldMT'),
-		url('Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
-		url('Arial-BoldMT.woff') format('woff'),
-		url('Arial-BoldMT.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
+    font-family: 'Arial';
+    src: url('../fonts/Arial-BoldMT.eot');
+    src: local('Arial Bold'), local('Arial-BoldMT'), url('../fonts/Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Arial-BoldMT.woff') format('woff'), url('../fonts/Arial-BoldMT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }

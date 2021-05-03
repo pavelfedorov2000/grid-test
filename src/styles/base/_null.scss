@@ -1,6 +1,7 @@
 * {
     box-sizing: inherit;
-    &:before, &:after {
+    &:before,
+    &:after {
         box-sizing: inherit;
     }
 }
@@ -19,14 +20,21 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    //color: #333333;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
-ul, li {
+ul,
+ol,
+li {
     list-style-type: none;
     margin: 0;
     padding: 0;

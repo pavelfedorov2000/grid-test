@@ -384,16 +384,16 @@ template {
 
 @font-face {
   font-family: 'Arial';
-  src: url("ArialMT.eot");
-  src: local("Arial"), local("ArialMT"), url("ArialMT.eot?#iefix") format("embedded-opentype"), url("ArialMT.woff") format("woff"), url("ArialMT.ttf") format("truetype");
+  src: url("../fonts/ArialMT.eot");
+  src: local("Arial"), local("ArialMT"), url("../fonts/ArialMT.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialMT.woff") format("woff"), url("../fonts/ArialMT.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Arial';
-  src: url("Arial-BoldMT.eot");
-  src: local("Arial Bold"), local("Arial-BoldMT"), url("Arial-BoldMT.eot?#iefix") format("embedded-opentype"), url("Arial-BoldMT.woff") format("woff"), url("Arial-BoldMT.ttf") format("truetype");
+  src: url("../fonts/Arial-BoldMT.eot");
+  src: local("Arial Bold"), local("Arial-BoldMT"), url("../fonts/Arial-BoldMT.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-BoldMT.woff") format("woff"), url("../fonts/Arial-BoldMT.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -437,6 +437,7 @@ p {
 }
 
 ul,
+ol,
 li {
   list-style-type: none;
   margin: 0;
@@ -571,7 +572,6 @@ a {
 
 .aside {
   grid-area: aside;
-  height: 335px;
   padding: 19px 25px 41px 13px;
   background-color: #777777;
 }
@@ -640,7 +640,7 @@ a {
   grid-row-gap: 20px;
 }
 
-.content__cards-item {
+.content__card {
   height: 150px;
   background-color: #efefef;
 }
@@ -682,7 +682,7 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .content__cards-item:last-child {
+  .content__card:last-child {
     grid-column: 3 / 5;
   }
 }
@@ -816,15 +816,15 @@ a {
     grid-gap: 10px;
   }
 
-  .content__cards-item:nth-child(odd) {
+  .content__card:nth-child(odd) {
     grid-column: 1 / 3;
   }
 
-  .content__cards-item:nth-child(even) {
+  .content__card:nth-child(even) {
     grid-column: 3 / 5;
   }
 
-  .content__cards-item:last-child {
+  .content__card:last-child {
     grid-column: 1 / 5;
   }
 
